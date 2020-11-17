@@ -9,6 +9,23 @@ from torch_geometric.utils import remove_self_loops, add_self_loops, softmax
 
 
 class P_GATConv(MessagePassing):
+    r"""
+    Args:
+        in_channels (int): Size of each input sample.
+        out_channels (int): Size of each output sample.
+        k (int): Number of iterations
+        negative_slope (float, optional): LeakyReLU angle of the negative
+            slope. (default: :obj:`0.2`)
+        dropout (float, optional): Dropout probability of the normalized
+            attention coefficients which exposes each node to a stochastically
+            sampled neighborhood during training. (default: :obj:`0`)
+        bias (bool, optional): If set to :obj:`False`, the layer will not learn
+            an additive bias. (default: :obj:`True`)
+        improved (bool): Improve the weight of self loops.
+        drop: Whether use dropout for the edge weight.
+        **kwargs (optional): Additional arguments of
+            :class:`torch_geometric.nn.conv.MessagePassing`.
+    """
 
     def __init__(self, in_channels, out_channels, k=2, negative_slope=0.2, dropout=0.6, bias=True, improved=False,drop=False,**kwargs):
         super(P_GATConv, self).__init__(aggr='add', **kwargs)
