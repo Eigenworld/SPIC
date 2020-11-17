@@ -8,6 +8,22 @@ from torch_geometric.utils import add_remaining_self_loops
 
 
 class P_AGNNConv(MessagePassing):
+    r"""
+    Args:
+        in_channels (int): Size of each input sample.
+        out_channels (int): Size of each output sample.
+        beta:Hyperparameter for the feature similarity.
+        K (int): Number of iterations
+        cached (bool, optional): If set to :obj:True, the layer will cache
+            the computation of :math:`(\alpha I + P)^k` 
+            on first execution, and will use the cached version for further executions.
+            This parameter should only be set to :obj:True in transductivelearning scenarios. 
+        bias (bool, optional): If set to :obj:`False`, the layer will not learn
+            an additive bias. (default: :obj:`True`)
+        improved (bool): Improve the weight of self loops.
+        **kwargs (optional): Additional arguments of
+            :class:`torch_geometric.nn.conv.MessagePassing`.
+    """
     def __init__(self, in_channels, out_channels, beta=1.0, K=1, cached=True, bias=True,
                  improved=False, **kwargs):
 
