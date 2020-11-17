@@ -8,6 +8,21 @@ from torch_geometric.nn.inits import uniform
 
 
 class P_GCNConv(MessagePassing):
+    r"""
+    Args:
+        in_channels (int): Size of each input sample.
+        out_channels (int): Size of each output sample.
+        K (int): Number of iterations
+        cached (bool, optional): If set to :obj:True, the layer will cache
+            the computation of :math:`(\beta I + \hat{D}^{-\frac{1}{2}}\hat{A} \hat{D}^{-\frac{1}{2}})^k` 
+            on first execution, and will use the cached version for further executions.
+            This parameter should only be set to :obj:True in transductivelearning scenarios. 
+        bias (bool, optional): If set to :obj:`False`, the layer will not learn
+            an additive bias. (default: :obj:`True`)
+        improve (bool): Improve the weight of self loops.
+        **kwargs (optional): Additional arguments of
+            :class:`torch_geometric.nn.conv.MessagePassing`.
+    """
     def __init__(self, in_channels, out_channels, K=1, cached=True, bias=True,
                  improve=False, **kwargs):
         super(P_GCNConv, self).__init__(aggr='add', **kwargs)
