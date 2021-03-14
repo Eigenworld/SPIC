@@ -1,6 +1,7 @@
 ## Understanding the Message Passing in Graph Neural Networks via Power Iteration Clustering
+![](https://github.com/Eigenworld/SPIC/blob/master/Elsevier.jpeg "Paper")
 
-The source code has been uploaded to our Google Colab. Code is available at:
+The source code has also been uploaded to our Google Colab. Code is available at:
 
 
 GNN tests on citation networks: https://colab.research.google.com/drive/1K249nRJsoPkB9NVHTOzG_YudTuzCbStS?usp=sharing
