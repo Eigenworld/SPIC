@@ -3,6 +3,14 @@
 The source code has been uploaded to our Google Colab. Code is available at:
 
 
-[GNN tests on citation networks](https://colab.research.google.com/drive/1K249nRJsoPkB9NVHTOzG_YudTuzCbStS?usp=sharing![image](https://user-images.githubusercontent.com/65590819/111067947-90754c80-8501-11eb-945e-ce5f5b255073.png))
+GNN tests on citation networks: https://colab.research.google.com/drive/1K249nRJsoPkB9NVHTOzG_YudTuzCbStS?usp=sharing
 
-[SPIC tests on citation networks](https://colab.research.google.com/drive/1NcoI00XChLojcdxwaMmluf3qWE1wI4Do?usp=sharing![image](https://user-images.githubusercontent.com/65590819/111067998-cca8ad00-8501-11eb-881b-b32e765ea0db.png))
+SPIC tests on citation networks: https://colab.research.google.com/drive/1NcoI00XChLojcdxwaMmluf3qWE1wI4Do?usp=sharing
+
+Random feature tests for GNN: https://colab.research.google.com/drive/1DTTlS4GJlhugC8pANM1wlJjyUXZw6UbH?usp=sharing
+
+Random feature tests for SPIC: https://colab.research.google.com/drive/1DSB5MoHQXT1BXQxPUIuutrMHf2w2B0X6?usp=sharing
+
+Tests on PPI data: https://colab.research.google.com/drive/1s-1ERKRsiLjvh_OyfeFVBrlSwrUwTh3S?usp=sharing
+
+Random aggregator tests: https://colab.research.google.com/drive/1DSB5MoHQXT1BXQxPUIuutrMHf2w2B0X6?usp=sharing
